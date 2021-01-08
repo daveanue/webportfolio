@@ -1,0 +1,278 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+
+:root {
+  --dark-navy: #020c1b;
+--navy: #0a192f;
+--light-navy: #172a45;
+--lightest-navy: #303C55;
+--navy-shadow: rgba(2,12,27,0.7);
+--slate: #8892b0;
+--light-slate: #a8b2d1;
+--lightest-slate: #ccd6f6;
+--white: #e6f1ff;
+--green: #64ffda;
+--green-tint: rgba(100,255,218,0.1);
+--font-sans: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+--font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+--fz-sm: 14px;
+--fz-md: 16px;
+}
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    background-color: var(--navy);
+    overflow: hidden;
+    height: 100vh;
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+    /* CSS smooth scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  z-index: 2;
+  scroll-snap-type: y mandatory;
+}
+/* snap to each portion of the page with scroll */
+header , section, footer{
+  scroll-snap-align: center;
+}
+
+.navbar{
+  display: flex;
+  width: 100%;
+  color: var(--lightest-slate);
+  font-family: var(--font-mono);
+  z-index:  2;
+  /* this push logo to one side and list to other side. */
+  justify-content: space-between;
+
+}
+.logo-box{
+  z-index: 2;
+  margin: 30px 80px 40px;
+}
+.nav_Orderlist {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.menulist li {
+    margin: 0px 5px;
+    position: relative;
+
+}
+.menuitems{
+  color: var(--white);
+  text-decoration: none;
+  font-size: var(--fz-xs);
+  margin-right: 15px;
+}
+.menuitems:hover{
+  color: var(--green);
+}
+
+.menulist{
+  display: flex;
+  list-style: none;
+}
+
+.ocean-background{
+  position:relative;
+  /* background: url('image/785.jpg') no-repeat center center/cover; */
+  background: url('image/anime-boat.jpg') no-repeat center center/cover;
+  height: 90vh;
+  z-index:1;
+}
+.ocean-background::after{
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* background: rgba(0,0,0,0.6); */
+  box-shadow: inset 220px 100px 250px #000000, inset -220px -100px 250px #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px 0px 10px;
+    font-weight: 600;
+    color: var(--lightest-slate);
+    line-height: 1.1;
+}
+/* main */
+ .page_stylebymain {
+margin: 0px auto;
+width: 100%;
+max-width: 1600px;
+min-height: 100vh;
+padding: 200px 150px;
+}
+
+.oceandeep h2{
+-webkit-box-align: center;
+align-items: center;
+position: relative;
+margin: 10px 0px 40px;
+width: 100%;
+white-space: nowrap;
+}
+.oceandeep h2::after{
+
+    content: "";
+    display: block;
+    position: relative;
+    top: -10px;
+    right: -100px;
+    width: 200px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--lightest-navy);
+}
+
+/* technologies grid */
+.tech-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(140px, 200px));
+}
+.tech-showcase{
+  list-style: url(image/clown-fish.png);
+  position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    color: var(--green);
+}
+
+/* Project sections */
+.project-container{
+  display:grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+}
+
+.project-image img{
+  width: 500px;
+}
+.project-image img:hover{
+  cursor: pointer;
+}
+.project-content h3{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.tool-used{
+  display: flex;
+}
+.tool-used li{
+  color: var(--green);
+  list-style:none;
+  padding-left: 20px;
+}
+/* section */
+section{
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1000px;
+    height: 60vh;
+}
+footer{
+  margin: 0px auto;
+  padding: 100px 0px;
+  max-width: 300px;
+}
+.fab{
+  margin-right: 30px;
+}
+
+#About{
+  max-width: 900px;
+}
+#intro{
+  margin: 0px 0px 50px;
+}
+.bottom{
+  background-color: var(--navy);
+display: flex;
+-webkit-box-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+flex-direction: column;
+align-items:flex-start ;
+
+}
+
+.oceandeep h1{
+  margin: 0px 0px 30px 4px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-sm),5vw,var(--fz-md));
+    font-weight: 400;
+}
+.h2-name{
+  margin: 0px;
+font-size: clamp(40px, 8vw, 80px);
+}
+.oceandeep p {
+  margin: 10px 0px 30px 0px;
+max-width: 500px;
+color: var(--slate);
+/* font-size: var(--fz-md), var(--fz-sm); */
+font-size: 18px;
+}
+
+.email-link{
+  color: var(--green);
+background-color: transparent;
+border: 1px solid var(--green);
+border-radius: var(--border-radius);
+padding: 1.25rem 1.75rem;
+font-size: var(--fz-sm);
+font-family: var(--font-mono);
+line-height: 1;
+text-decoration: none;
+cursor: pointer;
+transition: var(--transition);
+text-align:center;
+margin-top: 50px;
+}
+
+.contact-p {
+  font-style: var(--font-mono);
+  font-size: var(--fz-md);
+  color: var(--light-slate);
+  max-width: 400px;
+  text-align: justify;
+  margin: 0px 0px 50px;
+}
+.contactDhpa{
+  max-width: 600px;
+  margin: 0px auto 100px;
+  text-align: center;
+}
+
+/* #circlelink-1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 40px 40px;
+  transform: translate(-50%, -50%);
+  animation: animate 20s infinite linear;
+  font-size: 3em;
+  z-index: 2;
+} */
+
+@keyframes animate
+{
+  0% {
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+  100%
+  {
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+
+}
