@@ -9,15 +9,12 @@
 <script type="text/javascript" src="jquery.lettering.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 <link rel="stylesheet" href="style.css">
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
 
 </script>
   <title>My Portfolio</title>
 </head>
-<!--  going to make representation of the ocean. -->
 <body>
-  <!-- <i class="fab fa-github fa-5x"></i>
-  <i class="fab fa-linkedin fa-5x"></i> -->
+
 
 
 
@@ -29,7 +26,6 @@
 
     <nav class="navbar">
       <div class="logo-box">
-        <i class="fas fa-cogs fa-3x"></i>
       </div>
       <div class="nav_Orderlist mynv">
     <ol class="menulist">
@@ -37,12 +33,10 @@
       <li><a class="menuitems" href="#About">About</a></li>
       <li><a class="menuitems" href="#Project">Project</a></li>
       <li><a class="menuitems" href="#Contact">Contact</a></li>
+      <li><a class="menuitems" href="image/David_Wang_resume.pdf" target="_blank">Resume</a></li>
     </ol>
     </div>
       </nav>
-
-
-
 
 <div ></div>
 <div ></div>
@@ -59,7 +53,7 @@
   <h2 class="h2-name">David Wang</h2>
 </div>
 <div class="oceandeep">
-  <p id="intro"> I'm a self-taught frontend web developer, I have the desire and passion to learn more about the web. </p>
+  <p id="intro"> I'm a software engineer that loves all the journey and challenges to build a wonderful web application </p>
 
 </div>
 <div class="oceandeep link">
@@ -71,30 +65,40 @@
       <div>
         <h2 class="about-heading">About Me</h2>
         <p>Hello! My name is David</p>
-        <p>After graduating from University, I've come path with web development. Being able to build something from scratch sounded very exciting although it can be difficult at time but I enjoy the satification when everything works out.</p>
-        <p>On my free time I really enjoy playing basketball or binging on shows, and playing video games. One of my goal that I think to me would be fun to accomplish is to build a game that people would enjoy. </p>
+        <p>Previously I was pursuing a path to become a student of medicine, however I found how fun and challenging software engineer can be. I'm driven by the motivation of making an impact by building application that can enrich people's lives.</p>
+        <p>On my free time I really enjoy playing basketball or binging on shows, and playing video games. </p>
       <div class="tech-grid">
         <div>
-            <p>What I can do</p>
+            <p>Front-end tech</p>
             <ul class="tech-showcase">
-                <li>Javascript</li>
-                <li>HTML/CSS</li>
-
+              <li>React</li>
+              <li>React-Native</li>
+              <li>Javascript ES6</li>
+              <li>HTML/CSS</li>
+              <li>SASS</li>
+              <li>Babel</li>
+              <li>Webpack</li>
             </ul>
         </div>
         <div>
-          <p>Some exposure to </p>
+          <p>Back-end tech</p>
           <ul class="tech-showcase">
               <li>Node.js</li>
-              <li>Mongoose</li>
-              <li>Jquery</li>
+              <li>Express</li>
+              <li>mySQL</li>
+              <li>mongoDB</li>
+              <li>Firebase</li>
           </ul>
         </div>
         <div>
-          <p>Udemy courses </p>
+          <p>Testing / Deployment </p>
           <ul class="tech-showcase">
-              <li>The Complete 2021 Web Development Bootcamp   by Angela Yu</li>
-              <li>The Modern Javascript Bootcamp   by Andrew Mead</li>
+              <li>AWS EC2</li>
+              <li>NGINX Loader Balancer</li>
+              <li>Docker</li>
+              <li>Mocha</li>
+              <li>Chai</li>
+              <li>Loader.io</li>
           </ul>
         </div>
           </div>
@@ -106,62 +110,92 @@
         <h2>Project</h2>
         <div class="project-container">
         <div class="project-image">
-          <a href="https://daveanue.github.io/virusmap/"><img src="image/covid-project.PNG" alt=""></a>
+          <a href="https://github.com/nycbucatini/catwalk37"><img src="image/catwalk.jpeg" alt=""></a>
         </div>
         <div class="project-content">
-            <h3>Covid Countries Case Count</h3>
+            <h3>Catwalk37</h3>
+            <p>Front-end Engineer</p>
             <div class="project-description">
               <p>
-                  A visualization of the world map and each countries' cases. Different indication of color
-                  to better visualize which country have a great number of Covid-cases.
+                  A fast fashion apparel retail application, user should be able to browse for products such as clothing and shoewears.
               </p>
               <ul class="tool-used">
-                <li>leaflet.js</li>
-                <li>mapbox.api</li>
-                <li>js</li>
+                <li>React</li>
+                <li>Express</li>
+                <li>Node</li>
+                <li>MySQL</li>
+                <li>AWS</li>
               </ul>
             </div>
         </div>
         <div class="project-image">
-          <a href="https://infinite-ocean-93582.herokuapp.com/"><img src="image/shortenUrl.png" alt=""></a>
+          <a href="https://github.com/daveanue/pipes36"><img src="image/github.png" alt=""></a>
         </div>
         <div class="project-content">
-          <h3>Url Shortener</h3>
+          <h3>Pipes36</h3>
+          <p>Back-end Engineer</p>
           <div class="project-description">
             <p>
-                Using mongoose we can associate an full link to a shorter random ID which associates to the full link.
-                and through this we are able to shorten the url.
+                Backend server build for apparel retailer platform with MySQL. Extracting, Loading, and Transforming over 100 million rows of data. Optimizing server to handle
+                more than 1500 clients per seconds with an average of 30 ms response time. Usage of NGINX to load balance server to be capable of handling more users.
             </p>
             <ul class="tool-used">
-              <li>node.js</li>
-              <li>mongoose</li>
-              <li>js</li>
+              <li>MySQL</li>
+              <li>EC2</li>
+              <li>Docker</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>NGINX</li>
             </ul>
         </div>
         </div>
           <div class="project-image">
-          <a href="https://daveanue.github.io/RPSGame/"><img src="image/RockPaper.png" alt=""></a>
+          <a href="https://github.com/daveanue/DINO-SORE"><img src="image/dinosore.jpeg" alt=""></a>
         </div>
         <div class="project-content">
-            <h3>Rock Paper Scissor</h3>
+            <h3>DINO-SORE</h3>
+            <p>Full-stack Engineer</p>
             <div class="project-description">
               <p>
-                  A simple game of Rock-Paper-Scissor against computer.
+                  An application build to allow users to communicate with their trainer in real-time, plan workout and meal with a convienient calender
               </p>
               <ul class="tool-used">
-                <li>JS</li>
-                <li>Jquery</li>
-                <li>HTML/CSS</li>
+                <li>React</li>
+                <li>React Router DOM</li>
+                <li>Material-UI</li>
+                <li>Firebase</li>
+                <li>MongoDB</li>
+                <li>Sass</li>
+                <li>Node</li>
+                <li>Express</li>
               </ul>
             </div>
+        </div>
+        <div class="project-image">
+          <a href="https://github.com/daveanue/Pokedex"><img src="image/github.png" alt=""></a>
+        </div>
+        <div class="project-content">
+          <h3>Pokedex Mobile</h3>
+          <p>Front-end Engineer</p>
+          <div class="project-description">
+            <p>
+                Mobile application build with React-Native allows users to view Pokedex on their mobile phone, could also see information such as height, weight, and moves of each individual pokemon in modal window when you tap on the pokemon.
+            </p>
+            <ul class="tool-used">
+              <li>React Native</li>
+              <li>StyleSheet</li>
+              <li>Node</li>
+              <li>Express</li>
+            </ul>
+        </div>
         </div>
     </div>
 </section>
 <section class="bottom contactDhpa" id="Contact">
 <div class="contact-me">
   <h2>Contact Me</h2>
-<p class="contact-p">If you would like to offer me an opportunity. Please give me an contact &#128515 </p>
-<a href="mailto:davewang8616@gmail.com" class="email-link"> >6ft Contact</a>
+<p class="contact-p">If you would like to offer me an opportunity. Please feel free to contact me &#128515 </p>
+<a href="mailto:davewang8616@gmail.com" class="email-link"> Contact</a>
 </div>
 </section>
 </main>
